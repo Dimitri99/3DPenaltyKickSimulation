@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Penalty Kick - CPE 471</title>
+		<style>
+			table, th, td {
+		    	border: 1px solid black;
+			}
+			img {
+				text-align:center;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Penalty Kick Simulation - CPE 471</h1>
+			<h3>by Dimitri Charitou</h3>
+		</header>
+		<img src="screenshot0.png" alt="2 Spheres" width="640" height="480">
+		<header>
+			<h2>Introduction</h2>
+			<p>For my final project, I implemented a soccer penalty kick simulation. The simulation includes three defensemen, a kicker, textured soccerball, and a goal. When the space bar is pressed, the kicker will do a kick windup and when the spacebar is pressed again, the kicker will kick the ball as long as his foot makes contact with the soccerball.  The kicker will either make a goal and celebrate or miss.  The project has two lighting modes: cel shaded or blinn-phong lighting.</p>
+		</header>
+
+		<header>
+			<h2>Features</h2>
+			<ul>
+				<li>The first mode is a realistic Blinn-Phong lighting effect.</li>
+				<img src="screenshot1.png" alt="2 Spheres" width="640" height="480">
+				<h6></h6>
+				<li>The second mode is a cel shaded lighting effect so all the players and goal have a cartoon look.</li>
+				<img src="screenshot2.png" alt="2 Spheres" width="640" height="480">
+				<h6></h6>
+				<li>When the player kicks the ball, the soccerball acts as a realistic rigidbody.  It collides with the kicker's foot and when the kicker misses, the ball bounces back.  Implementing physics especially deepened my knowledge of computer graphics technology because it illustrated the connection between computer graphics and realistic behavior. A YouTube video of the project can be found here!! https://www.youtube.com/watch?v=GLXEdO33P6Y&feature=youtu.be</li>
+				<h6></h6>
+				<li>The kicker has three big animations: windup, kicking, and celebrating.</li>
+				<img src="screenshot3.png" alt="2 Spheres" width="640" height="480">
+				<h6></h6>
+				<li>A game camera where the user can interact and explore the world.</li>
+				<img src="screenshot4.png" alt="2 Spheres" width="640" height="480">
+			</ul>
+		</header>
+
+		<header>
+			<h2>Takeaways</h2>
+			<p>Learning more about how to implement Ordinary Differential Equation (ODE) based physics and rigidbodies was very interesting. This class and project especially challenged my debugging skills because graphics code is difficult to debug. If there was more time, I would have liked to learn how to do more realistic animation techniques, such as skinning and keyframes because implementing the animations was very tedious with hierarchically modelled models.  In addition, I would add in a dive animation for the goalie.</p>
+		</header>
+		
+		<header>
+			<h2>References</h2>
+			<ul>
+				<li>Baraff and Witkin's Siggraph's papers on physically based modeling: https://www.cs.cmu.edu/~baraff/sigcourse/notesb.pdf</li>
+				<li>Previous student Reed Garmsen's <a href="https://users.csc.calpoly.edu/~zwood/teaching/csc471/finalW16_1/rgarmsen/index.html">project website</a></li>
+				<li>Research regarding <a href="https://wesleygamedesigner.blogspot.com/2013/02/graphics-in-video-games-cel-shading.html">cel shading</a></li>
+				<li>Skybox was found at <a href="http://www.custommapmakers.org/skyboxes.php">Custom Maps Makers</a></li>
+			</ul>
+			<ul></ul>
+		</header>
+	</body>
+</html>
