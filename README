@@ -1,0 +1,31 @@
+PROJECT: Penalty Kick Simulation
+NAME:  Dimitri Charitou
+CLASS: CPE 471
+DATE:  June 13, 2019
+
+HOW TO RUN: ./draw [lightingMode] [resourceDir]
+
+	    lightingMode: 0 shades with Blinn-Phong and 1 shades with cel shading.
+	    ./draw 0
+	    ./draw 1
+
+	    resourceDir: Redirect program to custom resource directory.
+
+NOTES: - Light is located at world position (-40, 60, -30).
+       - I bound the camera movement so it can not move outside of the skybox.
+       - The ball collisions are implemented with Ordinary Differential Equation based physics.
+       - The kicker will make a goal on every other reset and miss the other half.  When the kicker misses, notice how the ball bounces back.
+	
+FEATURES:
+	   - The r key will reset the kicker and the ball.  If you miss the ball, you must press the r key to cleanly reset the scene, 
+	     otherwise you will confuse the kicker's animations.
+	   - The spacebar is pressed to start the kick and to kick the ball when you are close.
+	   - The w key will move the camera forward along the current gaze.
+	   - The s key will move the camera backward along the current gaze.
+           - The d key will move the camera right along the current gaze.
+           - The a key will move the camera left along the current gaze.
+	   - Scrolling with the mouse pad will rotate the camera in place.
+	   - The soccerball in front of the goalie is textured.
+
+CITATIONS: Soccerball texture from: https://st.depositphotos.com/3532197/4923/v/950/depositphotos_49232981-stock-illustration-soccer-ball-vector-seamless-pattern.jpg
+	   Skybox from: http://www.custommapmakers.org/skyboxes.php
